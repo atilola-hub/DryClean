@@ -27,14 +27,55 @@
                 <input type="email" id="email" name="email required">
                 <br><br>
             </div>
+
+
+<label for="dressType" >Type of Clothes:</label>
+        <select id="dressType" onchange="showOptions()" required>
+            <option value="">-- Select Type --</option>
+            <option value="english">English Dress</option>
+            <option value="native">Native Dress</option>
+        </select>
+
+
+
+<br><br>
+
+<div id="englishOptions" class="hidden">
+            <label for="englishSelect">Select English Dress</label>
+
+
+
+            <select id="englishSelect" name="englishDress">
+                <option value="shirt_trouser">Shirt and Trouser</option>
+                <option value="skirt_blouse">Skirt and Blouse</option>
+                <option value="suit">Suit</option>
+            </select>
+        </div>
+<br>
+
+
+<div id="englishOptions" class="hidden">
+            <label for="nativeSelect">Select Native Dress</label>
+
+            <select id="nativeSelect" name="nativeSelect">
+                <option value="pure_ankara">Pure Ankara</option>
+                <option value="kampala">Kampala</option>
+                <option value="adire">Adire</option>
+            </select>
+        </div>
+        <br><br<
+
+
+
             
                 <div>
             <label>Date:</label>
                 <input type="date" id="date" name="date" required>
                 <br><br>
             </div>
+            <br>
+            <button type="submit"class="submit-btn">Submit</button>
             
-            <button type="submit" class="submit-btn">Submit</button>
             </form>
         </div>
             
@@ -43,18 +84,4 @@
 
 
 
-      <label>Type Of Clothes:</label>
-                 <select id="clothing-type" name="clothing-type">
-                    <optgroup label="Native Dress">
-                       <option value="pure-ankara">Pure Ankara</option>
-                        <option value="adire">Adire</option>
-                        <option value="kampala">Kampala</option>
-                        </optgroup>
-                            <optgroup label="English Dress">
-                                <option value="suit">Suit</option>
-                            <option value="shirt-trouser">Shirt and Trouser</option>
-                                <option value="both">Both</option>
-                        </optgroup>
-                
-                        </select>
-                        </div>
+      
